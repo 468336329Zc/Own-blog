@@ -1,0 +1,181 @@
+{% extends  'auth/blog_center_base.html' %}
+
+
+{% block title %}  {{ blog.title }}{% endblock %}
+
+{% block head %}
+    <!--bootstrap核心css文件!-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/blog_center_articles_detail.css') }}">
+    <!--引入markdown样式文件-->
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='editormd/css/editormd.preview.css') }}"/>
+
+
+
+{% endblock %}
+
+
+{% block main %}
+
+    <script src="http://static.tctip.com/tctip-1.0.2.min.js"></script>
+    <script>
+        new tctip({
+            top: '20%',
+            button: {
+                id: 9,
+                type: 'dashang',
+            },
+            list: [
+                {
+                    type: 'alipay',
+                    qrImg: '{{ url_for('static',filename='images/zhifubao.jpg') }}'
+                }, {
+                    type: 'wechat',
+                    qrImg: '{{ url_for('static',filename='images/weixin.jpg')}}',
+
+                }
+            ]
+        }).init()
+    </script>
+    <div class="contentblock">
+        <h3 class="blog-title" id="blog-title"> {{ blog.title }}</h3>
+        <!-- id 将作为查询条件 -->
+        <span id="/articles/detail/{{ blog.title }}" class="leancloud_visitors" data-flag-title="{{ blog.title }}">
+    <em class="post-meta-item-text" style="color: #888 ">阅读量: </em>
+    <i class="leancloud-visitors-count"></i>
+</span>
+        <!--<hr>分割线!-->
+        <hr>
+        <!--markdown数据未转换之前!   这里的小bug，数据是从数据库获得后要展示在界面，所以采取隐藏的方法 style='display:none'-->
+        <div id="test-editormd" style="display: none">
+            <textarea id="markdown-content" style="display: none">{{ blog.content }}</textarea>
+        </div>
+        <!--markdown展示数据放在textarea中-->
+        <div id="markdown-preview">
+            <textarea id="MarkdownToHtml-content" style="display: none;"> </textarea>
+        </div>
+        <div class="blog-info">
+            <span class="blog-time">{{ blog.create_time }}</span>
+        </div>
+    </div>
+
+    <div class="content-toc">
+        <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()"><h5>显示目录</h5>
+        </button>
+        <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()"><h5>隐藏目录</h5></button>
+        <div class="random-toc" id="random-toc" style="display: block;">
+        </div>
+    </div>
+    <div class="post-tool" id='post-money'><a class="btn-thumbs-up" href="javascript:void(0);" data-cid="52" title="95"><i
+            class="fa fa-thumbs-up" aria-hidden="true"></i> 打赏</a></div>
+    <div id="pay" style="display: none">
+        <span><p class="weixin">微信</p></span>
+        <img id='weixin' src="{{ url_for('static',filename='images/weixin.jpg') }}" width="180px">
+        <span><p class="zhifubao">支付宝</p></span>
+        <img id='zhifubao' src="{{ url_for('static',filename='images/zhifubao.jpg') }}" width="180px">
+    </div>
+
+    <div class="up-down">
+        <nav id="pagination">
+            <a href="#" class="prev">←上一篇文章</a>
+            <a href="#" class="next">下一篇文章→</a>
+        </nav>
+    </div>
+    <!--评论分割线!-->
+    <hr>
+    <br>
+    <h3>评论:</h3><span><h5><i>支持markdown语法哦</i></h5></span>
+
+    <!--valine评论系统!-->
+    <div class="comments"></div>
+
+
+    <div id="bottom-outer">
+        <div id="bottom-inner">
+
+            <a href="http://zhangchuan.club"> © 年少最初的模样</a>
+            <br><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+            | 本站访客数<span id="busuanzi_value_site_uv"></span>人次
+
+        </div>
+        2019 -<span id="year"></span>
+    </div>
+
+    <script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/articles.js') }}"></script>
+    <script src="{{ url_for('static',filename='editormd/examples/js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='editormd/lib/marked.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='editormd/lib/prettify.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='editormd/lib/raphael.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='editormd/lib/underscore.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='editormd/lib/sequence-diagram.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='editormd/lib/flowchart.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='editormd/lib/jquery.flowchart.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='editormd/editormd.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/jieximarkdown.js') }}"></script>
+    <!--Leancloud 操作库:-->
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <!--Valine 的核心代码库:-->
+    <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+    <script>
+        new Valine({
+            // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+            av: AV,
+            visitor: true,
+            el: '.comments', //
+            app_id: 'XNMwWFjAbFUrGbMy43bntylu-gzGzoHsz', // 这里填写上面得到的APP ID
+            app_key: 'bTXoh11gVaxvHk2HC6wCIRs8', // 这里填写上面得到的APP KEY
+            placeholder: '请输入上方的昵称与邮箱再评论哦' // [v1.0.7 new]留言框占位提示文字
+        });
+    </script>
+    <script type="text/javascript">
+
+        <!--js开始-->
+        //先对容器初始化，在需要展示的容器中创建textarea隐藏标签，
+        $("#markdown-preview").html('<textarea id="appendTest" style="display:none;"></textarea>');
+        var content = $("#markdown-content").val();//获取需要转换的内容
+        $("#appendTest").val(content);//将需要转换的内容加到转换后展示容器的textarea隐藏标签中
+
+        //转换开始,第一个参数是上面的div的id
+        editormd.markdownToHTML("markdown-preview", {
+
+            htmlDecode: "style,script,iframe", //可以过滤标签解码
+            emoji: true,
+            codeFold: true,
+            taskList: true,
+            tocm: true, // Using [TOCM]
+            tocContainer: "#random-toc",//自定义toc目录容器
+            tex: true,// 开启科学公式TeX语言支持，默认关闭
+            saveHTMLToTextarea: true,//方便提交表单数据
+            flowChart: true,//开启流程图支持，默认关闭
+            sequenceDiagram: true,//开启时序/序列图支持，默认关闭,
+            syncScrolling: "single",
+            imageUpload: true,
+            imageFormats: ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
+            imageUploadURL: "./php/upload.php",
+            onload: function () {
+                console.log('onload', this);
+                this.height(480);
+            }
+        });
+
+        //底下年份
+        var myDate = new Date();
+        var year = myDate.getFullYear();
+        document.getElementById('year').innerHTML = year;
+
+        //money打赏
+        $(document).ready(function () {
+
+            $("#post-money").click(function () {
+                $('#pay').toggle();
+            })
+        });
+
+
+    </script>
+
+
+{% endblock %}

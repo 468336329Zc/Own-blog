@@ -1,0 +1,117 @@
+.blog-title{
+    padding: 15px ;
+
+    text-align: center;
+}
+.blog-time{
+  padding-left:800px ;
+}
+
+.blog-content{
+    padding-left: 15px;
+}
+.comment-content{
+    display: block;
+    width: 100%;
+    padding: 7px 8px;
+    background: #fff;
+    border: 1px solid #c1c1c1;
+    border-radius: 4px;
+    resize: none;
+    height: 38px;
+    font-size: 14px;
+    line-height: 22px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: height .3s ease-in-out;
+    transition: height .3s ease-in-out;
+}
+.comment-content.open {
+    height: 80px;
+}
+
+
+.comment-list{
+    list-style: none;
+}
+
+.comment{
+    padding-left:10px;
+}
+.form-group{padding-left:10px; }
+
+
+.comment-time{
+    padding-left: 758px;
+}
+
+.content-toc{
+  position: fixed;
+  width: 195px;
+  right: 0;
+  top: 0;
+  display: block;
+  background: #444;
+  color: #bbb;
+  margin-top: 0;
+  font-size: 12px;
+  overflow-y: auto;
+}
+.zhuce{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #2e6da4;
+}
+.btn{
+   display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.post-tool {
+    text-align: center;
+    padding: 10px 0;
+}
+.post-tool a {
+    margin: 0 5px;
+    padding: 6px 10px;
+    outline: 0;
+    border: 1px solid #e78170;
+    color: #e78170;
+
+    -webkit-border-radius: 5px;
+
+}
+.post-tool a {
+    font-size:18px;
+    line-height: 32px;
+}
+.weixin{
+    padding-left: 35%;
+
+}
+#weixin{
+   margin-left: 27%;
+}
+
+.zhifubao{
+    padding-left: 50%;
+}
+#zhifubao{
+   margin-left: 55%;
+}

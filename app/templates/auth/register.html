@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8"/>
+    <title>小张博客-注册</title>
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/login_register.css')}}" >
+ <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/vegas.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/highlight-railscasts.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/jquery.fancybox.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/jquery.fancybox-thumbs.css') }}">
+
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static',filename='images/favicon.ico') }}"
+</head>
+
+<body>
+<form >
+    <div class="form-container">
+       <h3 class="page_title">注册</h3>
+        <div class="form-group">
+            <input type="text" class="form-control" id="telephone"  placeholder="手机号码">
+        </div>
+          <div class="form-group">
+            <input type="password" class="form-control"  id="password1"  placeholder="密码">
+        </div>
+          <div class="form-group">
+            <input type="password" class="form-control"  id="password2"  placeholder="确认密码">
+        </div>
+         <div class="form-group" id="show" >
+             <input type="email"  class ='form-control' id='email' name="email" placeholder="qq邮箱">
+         </div>
+    </div>
+</form>
+ <div class="email-form" id="need-show"  hidden>
+     <input type="text"  class="yanzhengmainput" id='yanzhengma' placeholder="请输入验证码">
+     <button class="btn zhuce get-email" id='send' onclick="send_email()" >获取邮箱验证码</button>
+ </div>
+    <div class="lijizhuce-form">
+        <button class="btn lijizhucebtn " id="info-yes" onclick="faceloginshow()">立即注册</button>
+    </div>
+
+
+ <div class="mainD" id="mainD">
+        <div id="shadow">
+            <div id="info">
+                <div id="info-title">注册获取头像权限提醒
+                    <span id="info-sl" aria-hidden="true">x</span>
+                </div>
+                <div id="info-content">
+                	<video id="v" style="width: 300px;height: 240px;"></video>
+                    <canvas hidden="" id="canvas" width="300px" height="240px"></canvas>
+                </div>
+                <div id="info-button">
+                    <button  id="info-yes" onclick="register()">确定</button>
+                    <button id="info-no">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+    $("#show").click(function () {
+        $('#need-show').toggle();
+    })
+});
+</script>
+
+
+
+<script src="{{ url_for('static',filename='js/random.js') }}"></script>
+<script src="{{ url_for('static',filename='js/picture.js') }}"></script>
+<script src="{{ url_for('static',filename='js/login.js') }}"></script>
+
+<script src="{{ url_for('static',filename='js/jquery.mousewheel.pack.js') }}"></script>
+
+<script src="{{ url_for('static',filename='js/jquery.fancybox.pack.js') }}"></script>
+
+<script src="{{ url_for('static',filename='js/jquery.fancybox-thumbs.js') }}"></script>
+
+</body>
+
+
+</html>

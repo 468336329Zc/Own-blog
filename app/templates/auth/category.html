@@ -1,0 +1,61 @@
+{% extends  'auth/blog_center_base.html' %}
+
+{% block title %}文章分类{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/categories.css') }}">
+{% endblock %}
+
+{% block main %}
+
+    {% if not categories %}
+        <div class="card mb-3">
+            <H2>所有文章目录</H2>
+            <div class="card-header">
+                <ul class="list-group list-group-flush">
+                    {% for blog in index_list %}
+
+                        <li style="list-style: none"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+
+                            <div class="blog-group">
+                                <p class="blog-title">
+                                    <a href="{{ url_for('detail',blog_title=blog.title) }}">{{ blog.title }}</a></p>
+                            </div>
+                            <div class="blog-info">
+                                <span class="blog-createtime">{{ blog.create_time }}</span>
+                            </div>
+                        </li>
+                    {% endfor %}
+                    <nav aria-label="Page navigation" class="pull-right">
+                        <ul class="pagination">
+                            {{ html|safe }}
+                        </ul>
+                    </nav>
+                </ul>
+            </div>
+         <div id="bottom-outer">
+                <div id="bottom-inner">
+
+                <a href="http://zhangchuan.club"> © 年少最初的模样</a>
+                <br><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+                | 本站访客数<span id="busuanzi_value_site_uv"></span>人次
+                </div>
+                    2019 -<span id="year"></span>
+            </div>
+
+        </div>
+
+        <script>
+            //底下年份
+
+            var myDate = new Date();
+            var year = myDate.getFullYear();
+            document.getElementById('year').innerHTML = year;
+
+        </script>
+
+        <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,110 @@
+<!--正品markdown!-->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8"/>
+    <title>张川 | MarkDown</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='editormd/examples/css/style.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static',filename='editormd/css/editormd.css') }}"/>
+    <link rel="shortcut icon" href="{{ url_for('static',filename='images/favicon.ico') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/markdown_editor1.css') }}">
+</head>
+<body>
+<br>
+<div id="layout">
+
+    <form  aciton="{{ url_for('markdown_editor1') }}" method="POST">
+        <div class="title-group" >
+            <input type="text" class="title-form" name="title" placeholder='请输入标题'>
+            <button class="button-fabu">发布文章</button>
+        </div>
+        <br>
+        <div id="test-editormd">
+            <!--书写博客内容!-->
+            <textarea name="content" style="display:none;">{{ blog.content }}</textarea>
+        </div>
+        </form>
+</div>
+
+<script src="{{ url_for('static',filename='editormd/examples/js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static',filename='editormd/editormd.min.js') }}"></script>
+<script type="text/javascript">
+    var testEditor;
+
+    $(function () {
+        testEditor = editormd("test-editormd", {
+            width: "90%",
+            height: "100%",
+            path: "{{ url_for('static',filename='editormd/lib/')}}",
+            emoji: true,
+            codeFold: true,
+            placeholder:'开始你的创作吧...',
+            htmlDecode: "style,script,iframe",
+            taskList: true,
+            tocm: true, // Using [TOCM]
+            tex: true,// 开启科学公式TeX语言支持，默认关闭
+            saveHTMLToTextarea: true,//方便提交表单数据
+            flowChart: true,//开启流程图支持，默认关闭
+            sequenceDiagram: true,//开启时序/序列图支持，默认关闭,
+            syncScrolling: "single",
+            imageUpload: true,
+            imageFormats: ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
+            imageUploadURL: "./php/upload.php",
+            onload : function() {
+                console.log('onload', this);
+                this.height(800);
+            }
+
+        });
+    });
+    $("#goto-line-btn").bind("click", function(){
+                    testEditor.gotoLine(90);
+                });
+                $("#show-btn").bind('click', function(){
+                    testEditor.show();
+                });
+                $("#hide-btn").bind('click', function(){
+                    testEditor.hide();
+                });
+                $("#get-md-btn").bind('click', function(){
+                    alert(testEditor.getMarkdown());
+                });
+                $("#get-html-btn").bind('click', function() {
+                    alert(testEditor.getHTML());
+                });
+                $("#watch-btn").bind('click', function() {
+                    testEditor.watch();
+                });
+                $("#unwatch-btn").bind('click', function() {
+                    testEditor.unwatch();
+                });
+                $("#preview-btn").bind('click', function() {
+                    testEditor.previewing();
+                });
+                $("#fullscreen-btn").bind('click', function() {
+                    testEditor.fullscreen();
+                });
+                $("#show-toolbar-btn").bind('click', function() {
+                    testEditor.showToolbar();
+                });
+                $("#close-toolbar-btn").bind('click', function() {
+                    testEditor.hideToolbar();
+                });
+                $("#toc-menu-btn").click(function(){
+                    testEditor.config({
+                        tocDropdown   : true,
+                        tocTitle      : "目录 Table of Contents",
+                    });
+
+                  $("#toc-default-btn").click(function() {
+                    testEditor.config("tocDropdown", false);
+            });
+                });
+
+
+
+</script>
+{% block body %}{% endblock %}
+</body>
+
+</html>

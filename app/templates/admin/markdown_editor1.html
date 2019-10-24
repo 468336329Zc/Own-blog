@@ -1,0 +1,200 @@
+<!--正品markdown!-->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8"/>
+    <title>张川 | MarkDown</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='editormd/examples/css/style.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static',filename='editormd/css/editormd.css') }}"/>
+    <link rel="shortcut icon" href="{{ url_for('static',filename='images/favicon.ico') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/markdown_editor1.css') }}">
+</head>
+<body>
+<br>
+<div id="layout">
+    <form aciton="{{ url_for('markdown_editor1') }}" method="POST">
+        <input type="text" class="title-form" name="title" placeholder="请输入标题">
+        <button class="button-fabu">发布文章</button>
+    </form>
+</div>
+    <br>
+    <div id="test-editormd">
+        <!--书写博客内容!-->
+        <textarea name="content" style="display:none;"></textarea>
+    </div>
+    </form>
+</div>
+
+<script src="{{ url_for('static',filename='editormd/examples/js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static',filename='editormd/editormd.min.js') }}"></script>
+<script src="{{ url_for('static',filename='js/jieximarkdown.js') }}"></script>
+<script type="text/javascript">
+    var testEditor;
+
+    $(function () {
+        testEditor = editormd("test-editormd", {
+            width: "90%",
+            height: "100%",
+            path: "{{ url_for('static',filename='editormd/lib/')}}",
+            emoji: true,
+            codeFold: true,
+            placeholder: '开始你的创作吧...',
+            htmlDecode: "style,script,iframe",
+            taskList: true,
+            tocm: true, // Using [TOCM]
+            tex: true,// 开启科学公式TeX语言支持，默认关闭
+            saveHTMLToTextarea: true,//方便提交表单数据
+            flowChart: true,//开启流程图支持，默认关闭
+            sequenceDiagram: true,//开启时序/序列图支持，默认关闭,
+            syncScrolling: "single",
+            imageUpload: true,
+            imageFormats: ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
+            imageUploadURL: "./static/images/editor_upload/",
+            onload: function () {
+                console.log('onload', this);
+                this.height(800);
+            }
+
+        });
+    });
+    $("#goto-line-btn").bind("click", function () {
+        testEditor.gotoLine(90);
+    });
+    $("#show-btn").bind('click', function () {
+        testEditor.show();
+    });
+    $("#hide-btn").bind('click', function () {
+        testEditor.hide();
+    });
+    $("#get-md-btn").bind('click', function () {
+        alert(testEditor.getMarkdown());
+    });
+    $("#get-html-btn").bind('click', function () {
+        alert(testEditor.getHTML());
+    });
+    $("#watch-btn").bind('click', function () {
+        testEditor.watch();
+    });
+    $("#unwatch-btn").bind('click', function () {
+        testEditor.unwatch();
+    });
+    $("#preview-btn").bind('click', function () {
+        testEditor.previewing();
+    });
+    $("#fullscreen-btn").bind('click', function () {
+        testEditor.fullscreen();
+    });
+    $("#show-toolbar-btn").bind('click', function () {
+        testEditor.showToolbar();
+    });
+    $("#close-toolbar-btn").bind('click', function () {
+        testEditor.hideToolbar();
+    });
+    $("#toc-menu-btn").click(function () {
+        testEditor.config({
+            tocDropdown: true,
+            tocTitle: "目录 Table of Contents",
+        });
+
+        $("#toc-default-btn").click(function () {
+            testEditor.config("tocDropdown", false);
+        });
+    });
+
+    //
+    $(document).ready(function () {
+
+        $("#publish").click(function () {
+            $('.modal').toggle();
+        })
+    });
+
+</script>
+
+{% block body %}{% endblock %}
+<button class=" button-fabu" id="publish">发布</button>
+<div class="modal">
+    <div role="dialog" class="modal__inner-1 modal__publish-article" aria-label="Insert publishArticle">
+        <div class="modal__inner-2">
+            <button id="info-s1" class="modal__close-button button not-tabbable" title="关闭" aria-label="关闭">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+                    <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
+                </svg>
+            </button>
+            <div class="modal__content"><h3>发布文章</h3>
+                <div class="form-entry flex form-tag-box"><label class="form-entry__label">文章标签：</label>
+                    <div class="form-entry__field">
+                        <div class="tag__box"><input type="hidden" name="tags">
+                            <div class="flex-box">
+                                <div id="tagList" class="tag__item-list">
+                                    <button class="tag__btn-tag">
+                                        <svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                             class="icon">
+                                            <path d="M512 938.816C276.288 938.816 85.184 747.754667 85.184 512 85.184 276.288 276.288 85.184 512 85.184c235.733333 0 426.816 191.104 426.816 426.816 0 235.754667-191.082667 426.816-426.816 426.816z m0-85.354667c188.544 0 341.461333-152.853333 341.461333-341.461333 0-188.565333-152.917333-341.44-341.461333-341.44-188.586667 0-341.461333 152.874667-341.461333 341.44 0 188.608 152.874667 341.461333 341.461333 341.461333z m-42.709333-384.149333v-128.042667a42.688 42.688 0 0 1 85.376 0v128.042667h128.064a42.709333 42.709333 0 0 1 0 85.376H554.666667v128.042667a42.666667 42.666667 0 0 1-85.376 0v-128.042667h-128.021334a42.688 42.688 0 0 1 0-85.376h128.021334z"></path>
+                                        </svg>
+                                        添加标签
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-entry flex form-tag-box"><label class="form-entry__label">分类专栏：</label>
+                        <div class="form-entry__field">
+                            <div class="tag__box"><input type="hidden" name="categories">
+                                <div class="flex-box">
+                                    <div id="tagList" class="tag__item-list">
+                                        <button class="tag__btn-tag">
+                                            <svg viewBox="0 0 1024 1024" version="1.1"
+                                                 xmlns="http://www.w3.org/2000/svg"
+                                                 class="icon">
+                                                <path d="M512 938.816C276.288 938.816 85.184 747.754667 85.184 512 85.184 276.288 276.288 85.184 512 85.184c235.733333 0 426.816 191.104 426.816 426.816 0 235.754667-191.082667 426.816-426.816 426.816z m0-85.354667c188.544 0 341.461333-152.853333 341.461333-341.461333 0-188.565333-152.917333-341.44-341.461333-341.44-188.586667 0-341.461333 152.874667-341.461333 341.44 0 188.608 152.874667 341.461333 341.461333 341.461333z m-42.709333-384.149333v-128.042667a42.688 42.688 0 0 1 85.376 0v128.042667h128.064a42.709333 42.709333 0 0 1 0 85.376H554.666667v128.042667a42.666667 42.666667 0 0 1-85.376 0v-128.042667h-128.021334a42.688 42.688 0 0 1 0-85.376h128.021334z"></path>
+                                            </svg>
+                                            新建分类专栏
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="tag__options-list">
+                                    <div class="tag__option-box"><label class="tag__option-label"><input type="checkbox"
+                                                                                                         class="tag__option-chk"
+                                                                                                         value="数据库模型">
+                                        <i
+                                                for="chk01" class="tag__option-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                 viewBox="0 0 1024 1024" class="icon">
+                                                <path d="M768 0H256C115.2 0 0 115.2 0 256v512c0 140.8 115.2 256 256 256h512c140.8 0 256-115.2 256-256V256c0-140.8-115.2-256-256-256z m17.6 377.6L460.8 728c-9.6 9.6-27.2 14.4-40 14.4-14.4 0-32-3.2-41.6-14.4l-142.4-153.6c-17.6-19.2-17.6-49.6 0-68.8 17.6-19.2 46.4-19.2 64 0l120 128 300.8-324.8c17.6-19.2 46.4-19.2 64 0s17.6 49.6 0 68.8z"
+                                                      p-id="2164" fill="#7ed321"
+                                                      data-spm-anchor-id="a313x.7781069.0.i4"></path>
+                                            </svg>
+                                        </i> <span class="spanIsAgree">数据库模型</span></label></div>
+                                    <div class="tag__option-box">
+                                        <label class="tag__option-label">
+                                            <input type="checkbox" class="tag__option-chk" value="python">
+                                            <i for="chk01" class="tag__option-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 1024"
+                                                     class="icon">
+                                                    <path d="M768 0H256C115.2 0 0 115.2 0 256v512c0 140.8 115.2 256 256 256h512c140.8 0 256-115.2 256-256V256c0-140.8-115.2-256-256-256z m17.6 377.6L460.8 728c-9.6 9.6-27.2 14.4-40 14.4-14.4 0-32-3.2-41.6-14.4l-142.4-153.6c-17.6-19.2-17.6-49.6 0-68.8 17.6-19.2 46.4-19.2 64 0l120 128 300.8-324.8c17.6-19.2 46.4-19.2 64 0s17.6 49.6 0 68.8z"
+                                                          p-id="2164" fill="#7ed321"
+                                                          data-spm-anchor-id="a313x.7781069.0.i4"></path>
+                                                </svg>
+                                            </i>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="modal__button-bar">
+                                    <button class="button" id="info-no">取消</button>
+                                    <button class="button btn-c-blue">保存为草稿</button>
+                                    <button class="button btn-b-red " id="info-yes">发布文章</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

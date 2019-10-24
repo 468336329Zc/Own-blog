@@ -1,0 +1,132 @@
+.title-form{
+    width: 83%;
+    padding: 8px;
+    font-size: 18px;
+    line-height: 24px;
+    background-color: #fff;
+    margin-left: 70px;
+    height:40px;
+}
+.button-fabu{
+    padding: 0 19px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    white-space: nowrap;
+    background-color: #ca0c16;
+    height:42px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.modal__inner-1 .modal__publish-article {
+    max-width: 606px;
+    width: 606px;
+}
+.modal__inner-1 {
+    margin: 7% auto 0;
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+}
+.modal__inner-2 {
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 4px;
+    border: 1px solid #e3e3e3;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+    position: relative;
+    overflow: hidden;
+}
+.modal__close-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #ccc;
+    width: 24px;
+    height: 24px;
+    padding: 2px;
+}
+
+.form-entry {
+    margin: 1em 0;
+    line-height: 32px;
+     position: relative;
+}
+.flex {
+    display: flex;
+}
+.modal__content > h3 {
+    margin-bottom: 1.5em;
+    font-size: 16px;
+    color: #3c3c3c;
+    line-height: 24px;
+}
+* {
+    box-sizing: border-box;
+}
+.form-entry__label {
+    margin-right: 8px;
+    display: block;
+    font-size: .9rem;
+    color: #4d4d4d;
+    white-space: nowrap;
+}
+.form-tag-box .form-entry__field {
+    border: none !important;
+}
+.form-entry__field {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+.tag__box button.tag__btn-tag .icon {
+    margin-right: 8px;
+    font-size: 20px;
+}
+.tag__box button .icon {
+    width: auto;
+}
+svg.icon {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+.tag__box .flex-box {
+    display: flex;
+    min-height: 24px;
+    line-height: 24px;
+}
+.tag__box p.notice-txt {
+    margin: 0;
+    padding: 0;
+    margin-top: 8px;
+    font-size: 12px;
+    color: #999;
+}
+.modal p {
+    line-height: 1.5;
+}
+.tag__option-box {
+    float: left;
+    height: 21px;
+    line-height: 21px;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 16px 8px 0;
+}
+.tag__box p.notice-txt {
+    margin: 0;
+    padding: 0;
+    margin-top: 8px;
+    font-size: 12px;
+    color: #999;
+}

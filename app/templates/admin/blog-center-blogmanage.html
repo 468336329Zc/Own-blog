@@ -1,0 +1,152 @@
+{% extends 'admin/blog-center-base.html' %}
+{% block title%}
+    博客管理
+{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/articleslist.css') }}">
+
+{% endblock %}
+
+{% block main %}
+    <div class="col-10 col-md-10" id="content-body">
+        <div class="main-nav-tabs">
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" role="tab" aria-controls="pills-profile" aria-selected="true">
+                        全部(xx) </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="https://mp.csdn.net/postlist/list/enable" role="tab"
+                       aria-controls="pills-profile" aria-selected="false">
+                        公开(xx) </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="https://mp.csdn.net/postlist/list/private" role="tab"
+                       aria-controls="pills-profile" aria-selected="false">
+                        私密(xx) </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="https://mp.csdn.net/postlist/list/audit" role="tab"
+                       aria-controls="pills-profile" aria-selected="false">
+                        审核(xx) </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="https://mp.csdn.net/postlist/list/draft" role="tab"
+                       aria-controls="pills-profile" aria-selected="false">
+                        草稿箱(xx) </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="main-search-box">
+            <form class="mt-2 mt-md-0 main-nav-tab-search search_input" action="https://mp.csdn.net/postlist/list/all">
+                <div class="dropdown year float-left mr8 default-val">
+                    <label>筛选：</label>
+                    <button class="btn btn-sm btn-dropdown dropdown-toggle" type="button" id="droYear"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        年
+                    </button>
+                </div>
+                <div class="dropdown month float-left default-val mr32">
+                    <button class="btn btn-sm btn-dropdown dropdown-toggle" type="button" id="droMonth"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        月
+                    </button>
+                    <input type="hidden" value="" id="month" name="month">
+                    <div class="dropdown-menu months-list" aria-labelledby="droMonth">
+                        <a class="dropdown-item" data-val="">不限</a>
+                    </div>
+                </div>
+                <div class="dropdown type float-left default-val mr16">
+                    <button class="btn btn-sm btn-dropdown dropdown-toggle" type="button" id="droType"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        文章类型
+                    </button>
+
+                </div>
+                <div class="dropdown categorie float-left default-val mr32">
+                    <button class="btn btn-sm btn-dropdown dropdown-toggle " type="button" id="droCategorie"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        分类专栏
+                    </button>
+                    <input type="hidden" value="" id="categorie" name="cate">
+                    <div class="dropdown-menu" aria-labelledby="droCategorie">
+                        <a class="dropdown-item" data-val="">不限</a>
+                        <div id="content-outer">
+                            <!--留着类别!-->
+                        </div>
+                    </div>
+                </div>
+                <input class="txt-keyword mr24" id="key" type="text" name="keyword" value="" placeholder="请输入标题关键词"
+                       aria-label="Search">
+                <button type="button" class="btn btn-danger btn-mp-search float-right" id="sousuo"
+                        onclick="get_blog_title()">搜索
+                </button>
+            </form>
+        </div>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show article-list active" id="pills-home" role="tabpanel"
+                 aria-labelledby="pills-home-tab">
+                {% for blog in index_list%}
+
+                    <div class="article-list-item">
+                        <div class="list-item-title">
+
+
+                            <span class="article-list-item-tag">置顶</span>
+
+                            <p class="article-list-item-txt ">
+                                <a href="{{ url_for('detail',blog_title=blog.title) }}" target="_blank"
+                                       id="blog">{{ blog.title }}</a>
+
+                                    <a href="{{ url_for('detail',blog_title=blog.title) }}" target="_blank"
+                                   id="sousuo-blog"></a>
+
+                            </p>
+                        </div>
+                        <div class="article-list-item-info">
+                            <div class="item-info-left">
+                                        <span class="yuanchuang">
+                                                                                            原创                                                                                    </span>
+                                <span class=""></span>
+                                <span class="yueduliang">
+                                            <svg class="icon icon-read">
+                                                <use xlink:href="#read"></use>
+                                            </svg>
+                                            阅读量(xx)                                    </span>
+                                <span class="">
+                                            <svg class="icon icon-comment">
+                                                <use xlink:href="#comment"></use>
+                                            </svg>
+                                           点赞(xx)
+                            </span>
+                            </div>
+                            <div class="item-info-oper">
+                                <a href="{{ url_for('editor_again',blog_title=blog.title) }}"
+                                   target="_blank"><span class="">查看</span></a>
+                                <input type="hidden" value="90614105" class="articleid">
+                                <span class="">
+                                                    <a href="javascript:void(0);" class="managecomment"
+                                                       data-aid="90614105" data-opt="lock">禁止评论</a>
+                                                </span>
+                                <a href="{{ url_for('delete',blog_title=blog.title) }}" data-aid="90614105"><span
+                                        class="del">删除</span></a>
+                            </div>
+
+                        </div>
+                    </div>
+            {% endfor %}
+                <nav aria-label="Page navigation" class="pull-right">
+                    <ul class="pagination">
+                        {{ html|safe }}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+        <script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+        <script src="{{ url_for('static',filename='js/articles.js') }}"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+{% endblock %}

@@ -1,0 +1,242 @@
+.form-container {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 130px;
+}
+
+.page_title {
+    text-align: center;
+
+}
+
+.main {
+    background-color: #ecf0f1
+}
+.lijizhucebtn{
+    width:302px;
+    margin-left: 39%;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #2e6da4;
+
+}
+
+.email-form{
+    margin-left: 39%;
+}
+
+.yanzhengmainput {
+    display: block;
+    height: 34px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.zhuce{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #2e6da4;
+
+}
+.lijizhuce-form{
+    margin-top: 1.35rem;
+}
+
+.get-email{
+    position: absolute;
+    margin-left: 179px;
+    margin-top: -35px;
+}
+
+
+/*导航栏*/
+.nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+}
+.nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style: none;
+    margin-top: 50px;
+    margin-left: 80px;
+
+}
+
+/*人脸识别登录*/
+
+        #main {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            z-index: 0;
+            overflow: scroll;
+        }
+
+        #main::-webkit-scrollbar {
+            display: none;
+        }
+
+        .mainD {
+            position: absolute;
+            width: 100%;
+            height: 200vh;
+            background-color: hsla(0, 0%, 60%, 0.5);
+            z-index: -1;
+            display: none;
+        }
+        #mainD.active{
+            margin:-450px auto;
+        }
+
+        .mainD.active {
+            z-index: 1;
+            display: block;
+            position: relative;
+            margin: -590px auto;
+        }
+
+        #info {
+            position: relative;
+            width: 500px;
+            height:400px;
+            margin: 0 auto;
+            border-radius: 3px;
+            background-color: #ffffff;
+
+            top: 100px;
+        }
+
+        #info-title {
+            width: inherit;
+            height: 60px;
+            line-height: 60px;
+            border-bottom: 1px solid lightgray;
+            font-size: 19px;
+            text-indent: 20px;
+        }
+
+        #info-title span {
+            position: absolute;
+            right: 15px;
+            top: -10px;
+            color: #808080;
+            font-weight: bold;
+        }
+
+        #info-title span:hover {
+            color: #404040;
+            cursor: pointer;
+        }
+
+        #info-content {
+            width: inherit;
+            height: 250px;
+        }
+
+
+        #info-button>button {
+            display: inline-block;
+            position: relative;
+            left: 300px;
+            border: 0;
+            padding: 8px 16px 8px 16px;
+            border-radius: 3px;
+            margin-left: 20px;
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        #info-button>button:focus {
+            outline: none;
+        }
+
+        #info-yes {
+            background-color: #007bff;
+        }
+
+        #info-yes:hover {
+            cursor: pointer;
+            background-color: #0069d9;
+        }
+
+        #info-no {
+            background-color: #6c757d;
+        }
+
+        #info-no:hover {
+            cursor: pointer;
+            background-color: #5a6268;
+        }
+        #info-sl{
+                font-size: 2rem;
+        }
+
+.face_login{
+    padding-left: 500px;
+    padding-top: 230px;
+
+
+}
+.Button {
+    display: inline-block;
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 32px;
+    color: #8590a6;
+    text-align: center;
+    cursor: pointer;
+    background: none;
+    border: 1px solid;
+    border-radius: 3px;
+    margin-left: 0;
+
+}
+
+.btn{
+   display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.developmentor{
+    color: #fff;
+    background-color: #0084ff;
+    border-color: #2e6da4;
+}
+.welcome-page{
+    padding: 4rem 2rem;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: left;
+    border-radius: 10px;
+    background-color: #ecf0f1;
+    height:500px;
+}
+/*虚化*/
+.welcome-page {
+    opacity: 0.8;
+}
+
+

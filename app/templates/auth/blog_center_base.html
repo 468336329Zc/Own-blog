@@ -1,0 +1,125 @@
+<!--博客中心基础模板!-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>张川 - {% block title %}{% endblock %}</title>
+
+    <link rel="shortcut icon" href="{{ url_for('static',filename='images/favicon.ico') }}">
+
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/random.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/vegas.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/highlight-railscasts.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/jquery.fancybox.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/iconfont/iconfont.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/jquery.fancybox-thumbs.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/plyr.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/person_manage.css') }}">
+    {% block head %}{% endblock %}
+</head>
+
+<body>
+<div class="side-navigate hide-area">
+
+
+</div>
+<div id="outer-container" class="hide-area">
+    <div id="container">
+        <div id="menu-outer" class="slide-down">
+            <div id="menu-inner">
+                <div id="brand">
+
+                    <a onClick="openUserCard()">
+                        <img id="avatar" src="{{ url_for('static',filename='images/tx.jpg') }}"/>
+                        <div id="homelink">个人博客</div>
+                    </a>
+                </div>
+                <div id="menu-list">
+                    <ul>
+                        <li>
+                            <a href="{{ url_for('index') }}">博客中心</a>
+                        </li>
+                        <li>
+                            <a href="{{ url_for('articles') }}">文章</a>
+                        </li>
+                        <li>
+                            <a href="{{ url_for('biaoqian') }}">标签</a>
+                        </li>
+                        <li>
+                            <a href="{{ url_for('show_category') }}">目录</a>
+                        </li>
+                        <li>
+                            <a href="{{ url_for('about') }}">关于</a>
+                        </li>
+                    </ul>
+                    <div id="show-menu">
+                        <button>菜单</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--访客人数不蒜子cdn!-->
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+
+        <script src="{{ url_for('static',filename='js/vegas.min.js') }}"></script>
+
+        <script src="{{ url_for('static',filename='js/random.js') }}"></script>
+
+        <script src="{{ url_for('static',filename='js/highlight.pack.js') }}"></script>
+
+        <script src="{{ url_for('static',filename='js/jquery.mousewheel.pack.js') }}"></script>
+
+        <script src="{{ url_for('static',filename='js/jquery.fancybox.pack.js') }}"></script>
+
+        <script src="{{ url_for('static',filename='js/jquery.fancybox-thumbs.js') }}"></script>
+
+        <script src="{{ url_for('static',filename='js/picture.js') }}"></script>
+
+
+        {% block main %}{% endblock %}
+        <div id="user-card">
+            <div class="center-field">
+                <img class="avatar" src="{{ url_for('static',filename='images/tx4.jpg') }}"/>
+                <p id="description"><a href="{{ url_for('about') }}">川</a></p>
+                <ul class="social-icon">
+                    <li>
+                        <a href="https://blog.csdn.net/weixin_43919632">
+                            CSDN
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/468336329Zc">
+                            <i class="icon iconfont github"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://twitter.com/John57285164">
+                            <i class="icon iconfont twitter"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="http://wpa.qq.com/msgrd?v=3&uin=468336329&site=qq&menu=yes">
+                            QQ
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+

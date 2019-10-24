@@ -1,0 +1,69 @@
+.logo {
+    width: 80px;
+    height: 51.55px;
+    margin: 0.25px;
+}
+.main{
+    width:730px;
+    margin:0 auto;
+    overflow: hidden;
+    padding:10px;
+    background-color: #ecf0f1
+
+}
+.Button--primary.Button--blue {
+    color: #fff;
+    background-color: #0084ff;
+}
+.SearchBar-askButton {
+    z-index: 103;
+    padding: 0 14px;
+    margin-left: 16px;
+    -webkit-transition: opacity .3s ease,-webkit-transform .3s ease;
+    transition: opacity .3s ease,-webkit-transform .3s ease;
+    transition: opacity .3s ease,transform .3s ease;
+    transition: opacity .3s ease,transform .3s ease,-webkit-transform .3s ease;
+    line-height: 30px;
+}
+
+.Button {
+    display: inline-block;
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 32px;
+    color: #8590a6;
+    text-align: center;
+    cursor: pointer;
+    background: none;
+    border: 1px solid;
+    border-radius: 3px;
+    margin-left: 0;
+
+}
+
+.btn{
+   display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.developmentor{
+    color: #fff;
+    background-color: #0084ff;
+    border-color: #2e6da4;
+}

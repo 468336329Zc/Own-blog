@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$USER_HOME$/Desktop/发布系统/大数据小组每日报告发布系统/BigBigGirl/app/templates/admin/republish.html" line="11" />
+    <bookmark url="file://$USER_HOME$/Desktop/发布系统/大数据小组每日报告发布系统/BigBigGirl/app/templates/admin/republish.html" line="5" />
+    <bookmark url="file://$USER_HOME$/Desktop/发布系统/大数据小组每日报告发布系统/BigBigGirl/app/templates/admin/face-login.html" description="&#9;&#9;&#9;&lt;pre &gt;&lt;h1 id=&quot;aa&quot;&gt;&lt;/h1&gt;&lt;/pre&gt;&#10;            &lt;h1 s..." line="28" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3b1a1f2d-06cc-4e41-889b-2614f2381b79" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/routes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1593">
+              <caret line="73" column="40" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
+              <folding>
+                <element signature="e#24#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Util.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="16" column="22" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/static/facedata/register/20190916&amp;083555.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/auth/blog_center_articles.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1296">
+              <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/auth/face_login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/auth/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="783">
+              <caret line="29" column="30" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/static/js/login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4698">
+              <caret line="174" column="32" selection-start-line="174" selection-start-column="32" selection-end-line="174" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/auth/show_main_page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3024">
+              <caret line="112" column="3" selection-start-line="112" selection-start-column="3" selection-end-line="112" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/auth/update.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/auth/register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1647">
+              <caret line="61" column="57" selection-start-line="61" selection-start-column="57" selection-end-line="61" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CoffeeScript File" />
+        <option value="Python Script" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>email-form</find>
+      <find>email</find>
+      <find>h(b){}};var Hb={0:200,1223:204},Ib=n.ajaxSettings.xh</find>
+      <find>lijizhucebtn</find>
+      <find>blog</find>
+      <find>min-height: 760px</find>
+      <find>查看主页</find>
+      <find>原创</find>
+      <find>.list-group-item.active</find>
+      <find>点赞</find>
+      <find>main-search-box</find>
+      <find>main-sea</find>
+      <find>article-list-item</find>
+      <find>main-nav-tabs</find>
+      <find>请输入</find>
+      <find>sousuo</find>
+      <find>搜索</find>
+      <find>!function(e){var n={};function t(r){if(n[r])return n[r].exports;var i=n[r]={i:r,l:!1,exports:{}};return e[r].call(i.exports,i,i.exports,t),i.l=!0,i.exports}t.m=e,t.c=n,t.d=function(e,n,r){t.o(e,n)||Object.defineProperty(e,n,{enumerable:!0,get:r})},t.r=function(e){&quot;undefined&quot;!=typeof Symbol&amp;&amp;Symbol.toStringTag&amp;&amp;Object.defineProperty(e,Symbol.toStringTag,{value:&quot;Module&quot;}),Object.defineProperty(e,&quot;__esModule&quot;,{value:!0})},t.t=function(e,n){if(1&amp;n&amp;&amp;(e=t(e)),8&amp;n)return e;if(4&amp;n&amp;&amp;&quot;object&quot;==typeof e&amp;&amp;e&amp;&amp;e.__esModule)return e;var r=Object.create(null);if(t.r(r),Object.defineProperty(r,&quot;default&quot;,{enumerable:!0,value:e}),2&amp;n&amp;&amp;&quot;string&quot;!=typeof e)for(var i in e)t.d(r,i,function(n){return e[n]}.bind(null,i));return r},t.n=function(e){var n=e&amp;&amp;e.__esModule?function(){return e.default}:function(){return e};return t.d(n,&quot;a&quot;,n),n},t.o=function(e,n){return Object.prototype.hasOwnProperty.call(e,n)},t.p=&quot;&quot;,t(t.s=0)}([function(e,n,t){e.exports=t(1)},function(e,n){!function(){var e,n,t,r,i,o,u,a,c,f=!1,l=!1,d=!1,s=!1,m=[&quot;http.+\\?.*url=.+&quot;,&quot;http.+\\?.*uri=.+&quot;],p=&quot;ED2K://&quot;,b=&quot;MAGNET:?&quot;,v=&quot;FTP://THUNDER://MMS://MMST://RTSP://RTSPU://XLAPP://&quot;;function h(e,n){return 0!=e.length&amp;&amp;(0!=s&amp;&amp;(0!=function(e){if(0==e.length)return!1;var n=e,t=n.indexOf(&quot;:&quot;);if(-1==t)return!1;var r=n.substr(0,t+1).toUpperCase();if(&quot;&quot;==r)return!1;var i=!0;return-1!=p.indexOf(r)?0==f&amp;&amp;(i=!1):-1!=b.indexOf(r)?0==l&amp;&amp;(i=!1):-1!=v.indexOf(r)?0==d&amp;&amp;(i=!1):i=!1,i}(e)&amp;&amp;(0!=function(e){if(0==e.length)return!0;var n=new Array,t=o.split(&quot;||&quot;);for(var r in t){var i=t[r].slice(2).trimRight(&quot;|&quot;);n.push(i)}var u=!0,a=e;for(var c in n)if(n[c].length&gt;0&amp;&amp;-1!=a.indexOf(n[c])){u=!1;break}return u}(n)&amp;&amp;(!function(e){if(0==e.length)return!1;if(0==u.length)return!1;var n=new Array,t=u.split(&quot;||&quot;);for(var r in t){var i=t[r].slice(2).toLowerCase().trimRight(&quot;|&quot;);n.push(i)}var o=!1,a=e.toLowerCase();for(var c in n)if(n[c]&gt;0&amp;&amp;-1!=a.indexOf(n[c])){o=!0;break}return o}(n)&amp;&amp;0!=function(e){if(0==e.length)return!1;var n=e.indexOf(&quot;:&quot;);if(-1==n)return!1;var t=e.toLowerCase();if(&quot;xlapp://&quot;==t.substr(0,n+3).trimLeft(&quot; &quot;))return!0;if(-1!=t.indexOf(&quot;ed2k://&quot;)||-1!=t.indexOf(&quot;magnet:?&quot;))return!0;var r,i,o=!1,u=(r=t.replace(/(\\+)/g,&quot;#&quot;).split(&quot;#&quot;),(i=r[r.length-1].split(&quot;.&quot;))[i.length-1]);return u.length&gt;0&amp;&amp;(u+=&quot;;&quot;,-1!=a.indexOf(u)&amp;&amp;(o=!0)),o}(e)))))}function g(e){return n=e,document.cookie,t=document.location.href,!function(e){var n=e.toLowerCase(),t=!0;return-1!=n.indexOf(&quot;?&quot;)&amp;&amp;-1==n.indexOf(&quot;magnet:?&quot;)||(t=!1),t}(n)&amp;&amp;h(n,t);var n,t}function x(e){chrome.extension.sendRequest({name:&quot;CheckbMoniterDynamicLinks&quot;},function(e){t=e.bMoniterDynamicLinks})}function k(e){if(!e.ctrlKey&amp;&amp;!t&amp;&amp;n&amp;&amp;r&amp;&amp;i){var o=this.href;if(checkResult=function(e){for(var n in m){var t=new RegExp(m[n],&quot;i&quot;).exec(e);if(null!=t)return t}return null}(o),null!=checkResult)return;if(checkResult=g(o),checkResult)return chrome.extension.sendRequest({name:&quot;xl_download&quot;,link:o,cookie:document.cookie,referurl:document.location.href}),e.stopPropagation(),void e.preventDefault()}}function y(){chrome.extension.onMessage.addListener(function(o,u,a){var c,f;&quot;UpdatePluginEnabled&quot;==o.name?n=o.enable:&quot;UpdateMoniterDynamicLinks&quot;==o.name?t=o.enable:&quot;UpdateWebsiteEnabled&quot;==o.name?r=o.enable:&quot;UpdatePageEnabled&quot;==o.name?i=o.enable:&quot;OnActivated&quot;==o.name?(console.log(&quot;OnActivated&quot;,e,o,u),e&amp;&amp;(c=document.location.href,f=o.tabId,chrome.extension.sendRequest({name:&quot;CheckEnabled&quot;,url:c,tabId:f},function(e){n=e.bPlugin,r=e.bWebsite,i=e.bPage}),x())):&quot;GetCookie&quot;==o.name&amp;&amp;a({cookie:document.cookie})})}e=!0,y(),c=document.location.href,chrome.extension.sendRequest({name:&quot;CheckActivated&quot;,url:c}),x(),function(){for(var e=0;e&lt;document.links.length;e++)document.links[e].addEventListener(&quot;click&quot;,k,!1)}(),document.addEventListener(&quot;keydown&quot;,function(e){e.ctrlKey&amp;&amp;chrome.extension.sendRequest({name:&quot;EnabledCapture&quot;,capture:!1},function(){})}),document.addEventListener(&quot;keyup&quot;,function(e){e.ctrlKey&amp;&amp;chrome.extension.sendRequest({name:&quot;EnabledCapture&quot;,capture:!0},function(){})}),chrome.extension.sendRequest({name:&quot;GetConfig&quot;},function(e){f=e.bMonitorEmule,l=e.bMonitorMagnet,d=e.bMonitorTradition,s=e.bMonitorI</find>
+      <find>搜</find>
+      <find>#content-body</find>
+      <find>decode</find>
+      <find>app</find>
+      <find>ap</find>
+      <find>comment-control</find>
+      <find>btn-</find>
+      <find>button</find>
+      <find>center-field</find>
+      <find>color:#000</find>
+      <find>comment</find>
+      <find>info</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/static/css/blog-center-articles.css" />
+        <option value="$PROJECT_DIR$/app/static/css/base.css" />
+        <option value="$PROJECT_DIR$/app/static/js/base.js" />
+        <option value="$PROJECT_DIR$/app/templates/admin/editor-again.html" />
+        <option value="$PROJECT_DIR$/app/templates/admin/admin-blog-center.html" />
+        <option value="$PROJECT_DIR$/app/static/css/artilcleslist.css" />
+        <option value="$PROJECT_DIR$/app/static/css/articleslist.css" />
+        <option value="$PROJECT_DIR$/app/static/js/jquery.min.js" />
+        <option value="$PROJECT_DIR$/app/static/css/blog-center.css" />
+        <option value="$PROJECT_DIR$/app/static/css/categories.css" />
+        <option value="$PROJECT_DIR$/app/templates/auth/face_login.html" />
+        <option value="$PROJECT_DIR$/app/templates/admin/update.html" />
+        <option value="$PROJECT_DIR$/app/templates/admin/test.html" />
+        <option value="$PROJECT_DIR$/app/templates/admin/publish_update.html" />
+        <option value="$PROJECT_DIR$/app/Util.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/app/manage.py" />
+        <option value="$PROJECT_DIR$/app/templates/auth/404.html" />
+        <option value="$PROJECT_DIR$/app/static/js/login.js" />
+        <option value="$PROJECT_DIR$/app/templates/admin/blog-center-blogmanage.html" />
+        <option value="$PROJECT_DIR$/app/static/js/getcount.js" />
+        <option value="$PROJECT_DIR$/app/static/css/random.css" />
+        <option value="$PROJECT_DIR$/app/static/css/person_manage.css" />
+        <option value="$PROJECT_DIR$/app/templates/auth/blog_center_articles.html" />
+        <option value="$PROJECT_DIR$/app/static/js/articles.js" />
+        <option value="$PROJECT_DIR$/app/static/js/update.js" />
+        <option value="$PROJECT_DIR$/app/templates/auth/update.html" />
+        <option value="$PROJECT_DIR$/app/static/css/blog_center_articles_detail.css" />
+        <option value="$PROJECT_DIR$/app/templates/auth/category.html" />
+        <option value="$PROJECT_DIR$/app/models.py" />
+        <option value="$PROJECT_DIR$/app/templates/auth/biaoqian.html" />
+        <option value="$PROJECT_DIR$/app/static/js/jieximarkdown.js" />
+        <option value="$PROJECT_DIR$/app/static/css/markdown_editor1.css" />
+        <option value="$PROJECT_DIR$/app/templates/admin/markdown_editor1.html" />
+        <option value="$PROJECT_DIR$/app/templates/auth/blog_center_articles_detail.html" />
+        <option value="$PROJECT_DIR$/app/static/editormd/tests/qunit/qunit-1.16.0.js" />
+        <option value="$PROJECT_DIR$/app/templates/admin/comments_manage.html" />
+        <option value="$PROJECT_DIR$/app/templates/admin/comments-manage.html" />
+        <option value="$PROJECT_DIR$/app/templates/auth/about.html" />
+        <option value="$PROJECT_DIR$/app/templates/auth/login.html" />
+        <option value="$PROJECT_DIR$/app/templates/auth/register.html" />
+        <option value="$PROJECT_DIR$/app/static/js/phphphto.js" />
+        <option value="$PROJECT_DIR$/app/static/js/picture.js" />
+        <option value="$PROJECT_DIR$/app/templates/admin/blog-center-base.html" />
+        <option value="$PROJECT_DIR$/app/templates/auth/blog_center_base.html" />
+        <option value="$PROJECT_DIR$/app/templates/auth/index.html" />
+        <option value="$PROJECT_DIR$/app/__init__.py" />
+        <option value="$PROJECT_DIR$/app/templates/auth/base.html" />
+        <option value="$PROJECT_DIR$/app/templates/auth/show_main_page.html" />
+        <option value="$PROJECT_DIR$/app/routes.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="10" />
+    <option name="width" value="1875" />
+    <option name="height" value="985" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="flask-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask-test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flask-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask-test" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flask-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask-test" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flask-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask-test" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="facedata" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flask-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask-test" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flask-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask-test" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flask-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask-test" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flask-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask-test" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flask-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask-test" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/发布系统/大数据小组每日报告发布系统/BigBigGirl" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\all_datas\python基础\coding\flask-test\app\static\images" />
+      <recent name="E:\all_datas\python基础\coding\flask-test\venv\Lib\site-packages" />
+      <recent name="E:\all_datas\python基础\coding\flask-test\venv\Lib\site-packages\face_recognition_models\models" />
+      <recent name="E:\all_datas\python基础\coding\flask-test\app\static" />
+      <recent name="E:\all_datas\python基础\coding\flask-test\app\static\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\all_datas\python基础\coding\flask-test\app\templates\auth" />
+      <recent name="E:\all_datas\python基础\coding\flask-test\app\templates\admin" />
+      <recent name="E:\all_datas\python基础\coding\flask-test\app\static\images" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.run">
+    <configuration name="Util" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="flask-test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/Util.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="emails" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="flask-test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/emails.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="forms" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="flask-test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/forms.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="flask-test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/manage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="flask-test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.run" />
+        <item itemvalue="Python.manage" />
+        <item itemvalue="Python.emails" />
+        <item itemvalue="Python.Util" />
+        <item itemvalue="Python.forms" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b1a1f2d-06cc-4e41-889b-2614f2381b79" name="Default Changelist" comment="" />
+      <created>1563448855704</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563448855704</updated>
+      <workItem from="1563448856841" duration="9502000" />
+      <workItem from="1563464278030" duration="4584000" />
+      <workItem from="1563500306952" duration="27232000" />
+      <workItem from="1563597014612" duration="25566000" />
+      <workItem from="1563686304945" duration="16431000" />
+      <workItem from="1563764917197" duration="28498000" />
+      <workItem from="1563857836419" duration="27166000" />
+      <workItem from="1563897692871" duration="3763000" />
+      <workItem from="1563944259753" duration="1951000" />
+      <workItem from="1563950430017" duration="17528000" />
+      <workItem from="1564029499723" duration="25793000" />
+      <workItem from="1564064604289" duration="2776000" />
+      <workItem from="1564118867958" duration="22815000" />
+      <workItem from="1564200602510" duration="21554000" />
+      <workItem from="1564286445828" duration="25178000" />
+      <workItem from="1564326459731" duration="1779000" />
+      <workItem from="1564371707679" duration="407000" />
+      <workItem from="1564379110400" duration="27139000" />
+      <workItem from="1564411370960" duration="3702000" />
+      <workItem from="1564462573866" duration="24667000" />
+      <workItem from="1564571973942" duration="8321000" />
+      <workItem from="1564582030194" duration="1842000" />
+      <workItem from="1564588360985" duration="665000" />
+      <workItem from="1564591548122" duration="279000" />
+      <workItem from="1564598106590" duration="232000" />
+      <workItem from="1564651746484" duration="388000" />
+      <workItem from="1564653320914" duration="9308000" />
+      <workItem from="1564718219157" duration="8094000" />
+      <workItem from="1564823603272" duration="2018000" />
+      <workItem from="1565068176770" duration="1261000" />
+      <workItem from="1565101763646" duration="626000" />
+      <workItem from="1565173789403" duration="9312000" />
+      <workItem from="1565228959225" duration="9055000" />
+      <workItem from="1565255670522" duration="1329000" />
+      <workItem from="1565258155672" duration="13268000" />
+      <workItem from="1565329016414" duration="24531000" />
+      <workItem from="1565414899687" duration="8725000" />
+      <workItem from="1565441945663" duration="10614000" />
+      <workItem from="1565501225837" duration="23783000" />
+      <workItem from="1565588168539" duration="22381000" />
+      <workItem from="1565666009296" duration="18399000" />
+      <workItem from="1565757241944" duration="17573000" />
+      <workItem from="1565850808027" duration="10568000" />
+      <workItem from="1565863298109" duration="11157000" />
+      <workItem from="1565884976829" duration="55000" />
+      <workItem from="1565932217915" duration="1285000" />
+      <workItem from="1566748426826" duration="624000" />
+      <workItem from="1567246406073" duration="757000" />
+      <workItem from="1567497017007" duration="14358000" />
+      <workItem from="1567519647268" duration="3119000" />
+      <workItem from="1567562166746" duration="10835000" />
+      <workItem from="1567593311800" duration="8802000" />
+      <workItem from="1567660112089" duration="12297000" />
+      <workItem from="1567734856405" duration="13490000" />
+      <workItem from="1567775251709" duration="1504000" />
+      <workItem from="1567780446618" duration="75000" />
+      <workItem from="1567782650346" duration="1462000" />
+      <workItem from="1567835746395" duration="5000" />
+      <workItem from="1567838733176" duration="5844000" />
+      <workItem from="1568034868373" duration="1786000" />
+      <workItem from="1568092534252" duration="5280000" />
+      <workItem from="1568213787044" duration="11481000" />
+      <workItem from="1568723957634" duration="3196000" />
+      <workItem from="1568802250314" duration="2679000" />
+      <workItem from="1568865019569" duration="1096000" />
+      <workItem from="1568885627701" duration="920000" />
+      <workItem from="1568899531417" duration="724000" />
+      <workItem from="1568940433880" duration="1451000" />
+      <workItem from="1568995222176" duration="9589000" />
+      <workItem from="1569044273127" duration="15018000" />
+      <workItem from="1569140186674" duration="17575000" />
+      <workItem from="1569164439995" duration="904000" />
+      <workItem from="1569167582588" duration="339000" />
+      <workItem from="1569243823458" duration="3395000" />
+      <workItem from="1569252527842" duration="3201000" />
+      <workItem from="1569331851297" duration="2240000" />
+      <workItem from="1569339223449" duration="1218000" />
+      <workItem from="1569416075217" duration="5205000" />
+      <workItem from="1569423141594" duration="1047000" />
+      <workItem from="1569503415048" duration="3671000" />
+      <workItem from="1569510869248" duration="5214000" />
+      <workItem from="1569566136600" duration="2265000" />
+      <workItem from="1569571907062" duration="2085000" />
+      <workItem from="1569583771107" duration="8446000" />
+      <workItem from="1569818539101" duration="16000" />
+      <workItem from="1569819279724" duration="2122000" />
+      <workItem from="1569829969479" duration="1192000" />
+      <workItem from="1569832328467" duration="1250000" />
+      <workItem from="1569834641930" duration="314000" />
+      <workItem from="1569837641586" duration="7614000" />
+      <workItem from="1569855490258" duration="170000" />
+      <workItem from="1569862470893" duration="2054000" />
+      <workItem from="1569864952321" duration="35000" />
+      <workItem from="1570527638528" duration="34000" />
+      <workItem from="1570619362199" duration="6011000" />
+      <workItem from="1570705433771" duration="63000" />
+      <workItem from="1570761534932" duration="2605000" />
+      <workItem from="1570771180356" duration="77000" />
+      <workItem from="1570777953713" duration="965000" />
+      <workItem from="1570884696164" duration="3268000" />
+      <workItem from="1570894079436" duration="2945000" />
+      <workItem from="1570958635379" duration="400000" />
+      <workItem from="1570962052740" duration="1411000" />
+      <workItem from="1571666323965" duration="873000" />
+      <workItem from="1571674833887" duration="13000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="749729000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25384617" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32658958" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3243968" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39892906" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3297587" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5006993" side_tool="true" weight="0.2824632" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4993007" weight="0.2817919" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32931727" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35804197" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32931727" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30254352" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39892906" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5006993" side_tool="true" weight="0.2824632" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4993007" weight="0.2824632" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32931727" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/flask_test$models.coverage" NAME="models Coverage Results" MODIFIED="1564123342841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/flask_test$manage.coverage" NAME="manage Coverage Results" MODIFIED="1565701860510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/flask_test$ac1064ad49c2_.coverage" NAME="ac1064ad49c2_ Coverage Results" MODIFIED="1564321033815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/migrations/versions" />
+    <SUITE FILE_PATH="coverage/flask_test$emails.coverage" NAME="emails Coverage Results" MODIFIED="1564668467850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/flask_test$Util.coverage" NAME="Util Coverage Results" MODIFIED="1564582051064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/flask_test$run.coverage" NAME="run Coverage Results" MODIFIED="1570958912279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_test$forms.coverage" NAME="forms Coverage Results" MODIFIED="1564577623870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/static/images/tx2.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/images/tx4.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/images/weixin.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/images/cqupt.JPG" />
+    <entry file="file://$PROJECT_DIR$/app/static/js/jieximarkdown.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/markdown_editor1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/editormd/tests/qunit/qunit-1.16.0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="172" column="57" lean-forward="true" selection-start-line="172" selection-start-column="57" selection-end-line="172" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/admin/logined.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/js/getcount.js" />
+    <entry file="file://$PROJECT_DIR$/app/static/js/phphphto.js" />
+    <entry file="file://$PROJECT_DIR$/app/static/js/picture.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="296" selection-start-line="296" selection-end-line="296" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/auth/blog_center_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3267">
+          <caret line="121" column="7" selection-start-line="121" selection-start-column="7" selection-end-line="121" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/emails.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding>
+            <element signature="e#1#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/auth/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2268">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/admin/publish_update.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/admin/markdown_editor1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/images/fancybox_sprite@2x.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/images/dhl.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/auth/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2025">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/images/flag.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/articleslist.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13608" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/auth/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4293">
+          <caret line="159" column="7" selection-start-line="159" selection-start-column="7" selection-end-line="159" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/admin/blog-center-blogmanage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="73" selection-start-line="5" selection-start-column="73" selection-end-line="5" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/admin/comments-manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="1" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/admin/blog-center-base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/blog-center.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15201">
+          <caret line="563" column="19" selection-end-line="14069" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/index.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/facedata/register/20190917&amp;204016.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/facedata/confirm/20190916&amp;163153.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/facedata/confirm/20190917&amp;204016.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/facedata/confirm/20190916&amp;083555.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/login_register.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3321">
+          <caret line="123" selection-start-line="123" selection-end-line="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/auth/blog_center_articles_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2862">
+          <caret line="106" column="45" selection-start-line="106" selection-start-column="45" selection-end-line="106" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/auth/category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1593">
+          <caret line="73" column="40" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/facedata/register/20190916&amp;083555.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/auth/blog_center_articles.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1296">
+          <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/auth/face_login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/auth/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="29" column="30" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4698">
+          <caret line="174" column="32" selection-start-line="174" selection-start-column="32" selection-end-line="174" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/auth/show_main_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3024">
+          <caret line="112" column="3" selection-start-line="112" selection-start-column="3" selection-end-line="112" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/auth/update.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/auth/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1647">
+          <caret line="61" column="57" selection-start-line="61" selection-start-column="57" selection-end-line="61" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

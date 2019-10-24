@@ -1,0 +1,69 @@
+{% extends 'auth/blog_center_base.html' %}
+{% block title %} 文章{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/blog-center-articles.css') }}">
+
+{% endblock %}
+
+{% block main %}
+    <div id="content-outer">
+        <div id="content-inner">
+            <article>
+                <div id="recent-posts">
+                    <h1>
+                        文章<span class="posts-count">只显示最新发表10篇</span>
+                    </h1>
+
+                    <h3 class="archive-year-title">2019-2020
+                        <span class="posts-count">10个帖子</span>
+                    </h3>
+                </div>
+                <div class="post-title-item">
+                    <ul class="articles-list">
+                        {% for blog in blogs %}
+
+                            <li>
+                                <div class="blog-group">
+
+                                    <p class="blog-title">
+                                        <a href="{{ url_for('detail',blog_title=blog.title) }}">{{ blog.title }}</a></p>
+                                </div>
+                                <div class="blog-info">
+                                    <span class="blog-createtime">{{ blog.create_time }}</span>
+                                    <span>阅读数: </span>
+                                    {% if  admin %}
+                                        <a class="blog-editor"
+                                           href="{{ url_for('editor_again',blog_title=blog.title) }}">编辑</a>
+                                        <a class="blog-delete"
+                                           href="{{ url_for('delete',blog_title=blog.title) }}">删除</a>
+
+
+                                    {% endif %}
+                                </div>
+                            </li>
+                        {% endfor %}
+
+                    </ul>
+                </div>
+            </article>
+        </div>
+        <div id="bottom-outer">
+            <div id="bottom-inner">
+
+                <a href="http://zhangchuan.club"> © 年少最初的模样</a>
+                <br><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+                | 本站访客数<span id="busuanzi_value_site_uv"></span>人次
+            </div>
+                2019 -<span id="year"></span>
+        </div>
+    </div>
+
+    <script>
+        //年份
+        var myDate = new Date();
+        var year = myDate.getFullYear();
+        document.getElementById('year').innerHTML = year;
+    </script>
+
+{% endblock %}

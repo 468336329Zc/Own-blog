@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>小张博客-登录</title>
+    <link rel="shortcut icon" href="{{ url_for('static',filename='images/favicon.ico') }}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/login_register.css')}}" >
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/vegas.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/jquery.fancybox.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/jquery.fancybox-thumbs.css') }}">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+
+<div class="view">
+    <ul class="nav nav-tabs">
+					<li class="nav-item">
+						<a class="nav-link active show" href="/" >主页</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/register" >注册</a>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link" href="/login" >用户名登录</a>
+					</li>
+				</ul>
+		<div class="welcome-page" >
+			<h2>欢迎来到小张博客！</h2>
+			<p>这是一个个人博客，不对外开放使用！</p>
+            <i>长得帅的推荐使用人脸识别登录,推荐使用Chrome浏览器，Firefox浏览器</i>
+            <br>
+            <i>普通游客登录仅只是可以评论，别无他用  /手动滑稽</i>
+            <br>
+            <br>
+            <p><a class="btn developmentor" href="/about">关于开发者</a></p>
+            <br>
+            <p>当前版本:1.0</p>
+            <br>
+            <p><a class="btn developmentor" href="/update">聊改更新</a></p>
+
+                <div id="main" class="face_login">
+                <button  class="btn btn-success btn-lg" id='info-yes' onclick='faceloginshow()'>人脸识别登录</button>
+                 <canvas hidden id="canvas" width="300px" height="240px"> </canvas>
+            </div>
+
+
+</div>
+
+</div>
+
+
+    <div class="mainD">
+        <div id="shadow">
+            <div id="info">
+                <div id="info-title">登录申请权限提醒
+                    <span id="info-sl" aria-hidden="true">x</span>
+                </div>
+                <div id="info-content">
+                	<video id="v" style="width: 300px;height: 240px;"></video>
+                    <canvas hidden="" id="canvas" width="300px" height="240px"></canvas>
+                     <img id="imgTag" src=""  hidden='' alt="imgTag">
+                </div>
+                <div id="info-button">
+                    <button  id="info-yes" onclick="login()">确定</button>
+                    <button id="info-no">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+
+<script src="{{ url_for('static',filename='js/random.js') }}"></script>
+<script src="{{ url_for('static',filename='js/vegas.min.js') }}"></script>
+<script src="{{ url_for('static',filename='js/highlight.pack.js') }}"></script>
+
+<script src="{{ url_for('static',filename='js/jquery.mousewheel.pack.js') }}"></script>
+
+<script src="{{ url_for('static',filename='js/jquery.fancybox.pack.js') }}"></script>
+<script src="{{ url_for('static',filename='js/login.js') }}"></script>
+<script src="{{ url_for('static',filename='js/picture.js') }}"></script>
+<script src="{{ url_for('static',filename='js/jquery.fancybox-thumbs.js') }}"></script>
+
+
+</body>
+
+
+
+
+</html>

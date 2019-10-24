@@ -1,0 +1,39 @@
+{% extends  'auth/blog_center_base.html' %}
+
+{% block title %}标签{% endblock %}
+
+
+{% block main %}
+    <h2>标签</h2>
+
+    <div id="content-outer">
+        <div id="content-inner">
+            <article id="page">
+                <h1 class="center-title">分类</h1>
+                <ul class="category-list">
+                    <li class="category-list-item"><a class="category-list-link"
+                                                      href="{{ url_for() }}">{{ category.name }}</a><span
+                            class="category-list-count">2</span></li>
+                </ul>
+            </article>
+        </div>
+    </div>
+
+    <div id="bottom-outer">
+        <div id="bottom-inner">
+
+            <a href="http://zhangchuan.club">Copyright © 年少最初的模样</a>
+            <br><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+            | 本站访客数<span id="busuanzi_value_site_uv"></span>人次
+
+
+        </div>
+        2019 -<span id="year"></span>
+    </div>
+    <script>
+        //建站时间
+        var myDate = new Date();
+        var year = myDate.getFullYear();
+        document.getElementById('year').innerHTML = year;
+    </script>
+{% endblock %}
