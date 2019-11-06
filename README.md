@@ -21,7 +21,7 @@
    ![Alt](https://s2.ax1x.com/2019/11/05/M9iveP.png)
    
    ![Alt](https://s2.ax1x.com/2019/11/05/M9FB6A.png)
-     ![Alt](https://s2.ax1x.com/2019/11/05/M9FB6A.png)
+    
  
  
   ![Alt](https://s2.ax1x.com/2019/11/05/M9kwNT.png)
@@ -29,6 +29,14 @@
 #### 后台
 
  ![Alt](https://s2.ax1x.com/2019/11/05/M9kxPS.png)
+ 
+ 
+文章发布
+![Alt](https://s2.ax1x.com/2019/11/06/MiAvU1.png)
+
+
+ 
+ 
  
   
   评论管理
